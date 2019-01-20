@@ -4,7 +4,7 @@ const kaamelott = require('./commands/kaamelott')
 const kaamelotthandler = require('./commands/kaamelotthandler')
 const son = require('./commands/sounds.json')
 const leave = require('./commands/sounds.json')
-const TOKEN = process.env.token
+const TOKEN = process.env.token;
 
 bot.on('message', function (message) {
   let comandUsed = kaamelott.parse(message) || kaamelotthandler.parse(message)
