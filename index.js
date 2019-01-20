@@ -1,4 +1,4 @@
-const TOKEN = process.env.token;
+const token = process.env.token;
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const kaamelott = require('./commands/kaamelott')
@@ -10,4 +10,4 @@ bot.on('message', function (message) {
   let comandUsed = kaamelott.parse(message) || kaamelotthandler.parse(message)
 })
 
-bot.login(TOKEN)
+bot.login(token)
