@@ -10,4 +10,5 @@ bot.on('message', function (message) {
   let comandUsed = kaamelott.parse(message) || kaamelotthandler.parse(message)
 })
 
+
 bot.login(TOKEN)
