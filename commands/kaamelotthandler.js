@@ -12,7 +12,7 @@ static action (message) {
           VC.join()
               .then(function (connection) {
                   connection.playFile(`./sounds/${sounds}`).on(`end`, function ()
-                  {connection.disconnect()}
+                  //{connection.disconnect()}
                 )});
     }
   }
