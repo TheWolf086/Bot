@@ -7,7 +7,7 @@ const son = require('./commands/sounds.json')
 const leave = require('./commands/sounds.json')
 
 bot.on('message', function (message) {
-  let comandUsed = kaamelott.parse(message) || kaamelotthandler.parse(message)
+  let comandUsed = kaamelott.parse(message) || kaamelotthandler.parse(message) || leave.parse(message)
 })
 
 bot.login(token)
