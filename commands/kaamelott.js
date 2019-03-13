@@ -14,7 +14,7 @@ module.exports = class kaamelott extends Command {
           VC.join()
             .then(connection => {
                 connection.playFile(`./sounds/${son}.mp3`).on(`end`, function ()
-                //{connection.disconnect()}
+                {connection.disconnect()}
               )});
             }catch{}
           }
